@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Story+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+    transition: all 0.3s linear;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+span {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+:root {
+    --color-principal: #004aad;
+    --text-secundario: #0074ff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
+    color: #fff;
+}
+
+.logo-whatsapp {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5px;
+    right: 25px;
+    z-index: 9999;
+    font-size: 40px;
+}
+
+.logo-whatsapp i {
+    color: #25D366;
+}
+
+/* HEADER */
+
+header {
+    padding: 20px 0;
+    width: 100%;
+}
+
+header .container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    position: static;
+    max-height: none;
+}
+
+header nav ul a{
+    display: block;
+    color: white;
+    margin-left: 30px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s linear;
+}
+
+header nav a:hover {
+    color: var(--color-principal);
+    border-bottom: 1px solid var(--color-principal);
+}
+
+header .menu{
+    display: none;
+}
+
+header .menu button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+header .menu img {
+    width: 20px;
+}
+
+main {
+    background-image: url(../img/teste1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.whatsapp {
+    position: absolute;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+}
+
+/* FIM DO HEADER */
+
+/* SECTION MAIN */
+
+#main-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-header .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 40px;
+}
+
+section .section--inicio {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section .section--inicio h1 {
+    font-size: 40px;
+    line-height: 45px;
+    height: auto;
+    background: linear-gradient(-90deg, #004aad, #0074ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .section--inicio p {
+    margin-top: 40px;
+}
+
+section .section--inicio button {
+    margin-top: 40px;
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(-90deg, #004aad, #a9d6ff);
+    color: #0A0F2C;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section .section--inicio button:hover {
+    box-shadow: 0px 0px 30px var(--text-secundario);
+}
+
+section .section--inicio button a {
+    color: #000000;
+}
+
+section .section--img img {
+    width: 300px;
+}
+
+section .section--img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* FIM DO SACTION-MAIN */
+
+/* ABOUT */
+
+#about {
+    background-color: #000000;
+}
+
+#about .container {
+    height: 100%;
+}
+
+#about .container .text--about,
+#servicos .container .text--about {
+    margin: auto;
+    font-size: 50px;
+    background: linear-gradient(-90deg, #004aad, #a9d6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about .section--about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 40px;
+}
+
+#about .about--img {
+    display: flex;
+    justify-content: start;
+}
+
+#about .about--img img {
+    width: 400px;
+}
+
+#about .about--quemsomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about .about--quemsomos b,
+#about .about--quemsomos span {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+/* FIM DO ABOUT */
+
+/* SERVIÇOS */
+
+#servicos {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+#servicos .container .section--servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.servico {
+    border: 3px solid var(--text-secundario);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.4s linear;
+    box-shadow: 0px 0px 30px rgba(0, 74, 173, 0.7);
+    min-height: 300px;
+}
+
+.servico:hover {
+    background-color: #141414;
+    box-shadow: 4px 4px 5px rgba(0, 74, 173, 0.7);
+}
+
+.servico h2 {
+    background: linear-gradient(-90deg, #004aad, #a9d6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.desc--servicos {
+    flex: 1;
+}
+
+.servico i {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.servico .area-mkt {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.conteudo--area-mkt {
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    background-color: var(--color-principal);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIM SERVIÇOS */
+
+/* CONTATO */
+
+.contatos {
+    background-color: #000000;
+}
+
+.contatos-titulo {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 50px;
+    background: linear-gradient(-90deg, #004aad, #a9d6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    padding: 10px;
+    border: 3px solid var(--text-secundario);
+    box-shadow: 0px 0px 30px rgba(0, 74, 173, 0.7);
+}
+
+.grupo-form {
+    margin-bottom: 15px;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid var(--text-secundario);
+    outline: none;
+}
+
+.campo-form:focus {
+    border: 1px solid var(--color-principal);
+}
+
+.botao-form {
+    color: #fff;
+    background: linear-gradient(45deg, #004aad, #a9d6ff);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 0px 30px rgba(0, 74, 173, 0.7);
+}
+
+.icons-redes {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons-redes i {
+    display: block;
+    margin: 0 20px;
+    font-size: 30px;
+}
+
+.icons-redes i:hover {
+    color: var(--text-secundario);
+}
+
+/* FIM DO CONTATO */
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+    padding-top: 50px;
+    border-top: 1px solid var(--text-secundario);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-menu a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover {
+    color: var(--color-principal);
+}
+
+.footer-redes a {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.footer-redes a:hover {
+    color: var(--text-secundario);
+}
+
+/* FIM DO FOOTER */
+
+/* RESPONSIVIDADE */
+
+@media (min-width:769px) and (max-width: 1140px) {
+    #main-header .container {
+        max-width: 1024px;
+        padding: 0px 20px;
+    }
+
+    #servicos .container .section--servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servico {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo-whatsapp {
+        bottom: 5px;
+        right: 25px;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    section .section--inicio h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    section .section--inicio p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    section .section--inicio button {
+        margin-top: 20px;
+        height: 30px;
+        width: 200px;
+    }
+
+    #about .about--quemsomos {
+        text-align: center;
+    }
+
+    #about .section--about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #about .about--img {
+        margin: 0 auto;
+    }
+
+    #about .about--img img {
+        width: 300px;
+    }
+
+    #about .container .text--about {
+        padding-bottom: 0;
+        padding-top: 25px;
+    }
+
+    #servicos .container .section--servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servico {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-whatsapp {
+        bottom: 0;
+        right: 10px;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    main {
+        height: auto;
+    }
+
+    header .container {
+        justify-content: space-between;
+        padding: 0px 40px;
+        position: relative;
+    }
+
+    header .menu{
+        display: block;
+    }
+
+    header nav ul{
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        width: 100%;
+        background-color: #0A0F2C;
+        overflow: hidden;
+        transition: max-height .35s ease;
+        z-index: 90;
+        display: block;
+        padding: 0 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+        max-height: 0;
+    }
+
+    header nav ul.active {
+        max-height: 500px;
+    }
+
+
+    header nav ul a {
+        display: block;
+        margin: 12px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        text-transform: capitalize;
+    }
+
+    header .menu button {
+        display: block;
+        cursor: pointer;
+        z-index: 99;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    #main-header .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section .section--inicio h1 {
+        padding-top: 20px;
+        font-size: 25px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    section .section--inicio {
+        align-items: center;
+        text-align: center;
+    }
+
+    section .section--img {
+        justify-content: center;
+    }
+
+    section .section--img img {
+        width: 200px;
+    }
+
+    #about .about--img {
+        display: none;
+        padding-top: 50px;
+    }
+
+    #about .about--quemsomos {
+        text-align: center;
+    }
+
+    #about .section--about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #about .container .text--about {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    header nav a {
+        display: block;
+    }
+
+    #servicos .container .section--servicos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .servico {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contatos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-logo img {
+        margin: 0 auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-whatsapp {
+        bottom: 0;
+        right: 5px;
+        font-size: 35px;
+    }
+}
